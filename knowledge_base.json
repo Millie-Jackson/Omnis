@@ -1,0 +1,16 @@
+{
+    "Example Game": {
+        "method_performance": {
+            "reinforcement": [
+                0.1560942550470441
+            ],
+            "imitation": [
+                0.08934278872975787
+            ],
+            "rule_based": [
+                0.6048631338965428
+            ]
+        },
+        "best_method": "rule_based"
+    }
+}
