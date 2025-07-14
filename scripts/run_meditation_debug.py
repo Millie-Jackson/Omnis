@@ -13,11 +13,21 @@ import logging
 import os
 import json
 from datetime import datetime
+from meditation.config import LOG_LEVEL
 from meditation.meditation_module import run_meditation
 from meditation.examples.dummy_agent_test import create_dummy_agent_state
 
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=getattr(logging, LOG_LEVEL),
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    handlers=[
+        logging.FileHandler("logs/meditation.log"),
+        logging.StreamHandler()
+    ]
+)
+
 
 
 def main():
