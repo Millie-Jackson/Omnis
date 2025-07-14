@@ -15,9 +15,12 @@ def create_dummy_agent_state():
     return {
         "steps_without_progress": 15, # Trigger threshold = 10
         "memory": [
-            {"steps": 1, "action": "move_forward", "result": "fail"},
-            {"steps": 2, "action": "move_forward", "result": "fail"},
-            {"steps": 3, "action": "move_forward", "result": "fail"},
+            {"step": 1, "action": "go", "result": "fail"},
+            {"step": 2, "action": "go", "result": "fail"},
+            {"step": 3, "action": "go", "result": "fail"},
+            {"step": 4, "action": "wait", "result": "pass"},
+            {"step": 5, "action": "go", "result": "fail"},
+            {"step": 6, "action": "go", "result": "fail"},
         ],
         "goals": [
             {"id": "reach_exit", "priority": 1},
