@@ -1,0 +1,21 @@
+{
+    "memory": {
+        "total_entries": 6,
+        "repeated_failures": 5,
+        "most_common_action": "go",
+        "action_count": 5,
+        "failure_loop_detected": true
+    },
+    "goals": {
+        "total_goals": 3,
+        "duplicates": {
+            "reach_exit": 2
+        },
+        "conflicts": [],
+        "priority_conflicts": [
+            "reach_exit"
+        ],
+        "drift_score": 0.7
+    },
+    "summary": "Meditation complete. no critical issues found."
+}

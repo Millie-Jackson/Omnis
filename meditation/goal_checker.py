@@ -57,7 +57,7 @@ def evaluate_goals(goals):
     seen_ids = set()
     for g in sorted_goals:
         if g["id"] in seen_ids:
-            priority_conflicts.append(g["ids"])
+            priority_conflicts.append(g["id"])
         seen_ids.add(g["id"])
 
     # Step 5: Calculate drift score

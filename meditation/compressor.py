@@ -39,7 +39,7 @@ def compress_memory(memory, findings, keep_last_n=5):
             if entry not in recent_memory:
                 recent_memory.append(entry)
     
-    # Step 3: Remove duplicates while preservig order
+    # Step 3: Remove duplicates while preserving order
     seen = set()
     compressed = []
     for m in recent_memory:
