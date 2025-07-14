@@ -22,6 +22,7 @@ def create_dummy_agent_state():
         "goals": [
             {"id": "reach_exit", "priority": 1},
             {"id": "collect_items", "priority": 2},
+            {"id": "reach_exit", "priority": 3},
         ],
         "last_reflection": None,
     }

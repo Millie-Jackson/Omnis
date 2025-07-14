@@ -1,0 +1,14 @@
+{
+    "memory": {
+        "total_entries": 3,
+        "repeated_failures": 3,
+        "most_common_action": "move_forward",
+        "action_count": 3,
+        "failure_loop_detected": true
+    },
+    "goals": {
+        "conflicts": 0,
+        "drift_score": 0.0
+    },
+    "summary": "Meditation complete. no critical issues found."
+}
