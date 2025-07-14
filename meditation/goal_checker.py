@@ -1,6 +1,15 @@
 # meditation/goal_checker.py
 
 
+"""
+Goal Evaluation
+
+Checks for coherence, drift, or contradiction in the agent’s
+current goal structure. Can be extended to support tree or
+graph-based goal systems.
+"""
+
+
 import logging
 
 

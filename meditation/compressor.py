@@ -1,6 +1,14 @@
 # meditation/compressor.py
 
 
+"""
+Memory Compressor
+
+Refactors or reduces memory footprint by pruning irrelevant
+entries and clustering similar events. Helps reset focus and reduce noise.
+"""
+
+
 import logging
 
 

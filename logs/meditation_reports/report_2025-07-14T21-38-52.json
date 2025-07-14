@@ -1,0 +1,11 @@
+{
+    "memory": {
+        "inconsistencies": 0,
+        "repeated_failures": []
+    },
+    "goals": {
+        "conflicts": 0,
+        "drift_score": 0.0
+    },
+    "summary": "Meditation complete. no critical issues found."
+}

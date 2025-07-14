@@ -1,0 +1,4 @@
+2025-07-14 21:38:52,238 [INFO] __main__: Starting meditation test with dummy agent.
+2025-07-14 21:38:52,253 [INFO] meditation.meditation_module: [Meditation] Triggered. Pausing environment interaction...
+2025-07-14 21:38:52,253 [INFO] meditation.meditation_module: [Meditation] Complete.
+2025-07-14 21:38:52,254 [INFO] __main__: Meditation report saved to logs/meditation_reports/report_2025-07-14T21-38-52.json

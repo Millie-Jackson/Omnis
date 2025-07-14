@@ -1,6 +1,15 @@
 # meditation/reporter.py
 
 
+"""
+Meditation Report Generator
+
+Creates a structured diagnostic report based on memory and goal analysis.
+This can be used both by the agent for planning and by human overseers
+for interpretability or debugging.
+"""
+
+
 import logging
 
 

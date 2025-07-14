@@ -1,6 +1,14 @@
 # meditation/triggers.py
 
 
+"""
+Trigger Detection
+
+Contains logic to determine when the agent should enter
+meditation based on internal performance metrics or conflict signals.
+"""
+
+
 import logging
 
 

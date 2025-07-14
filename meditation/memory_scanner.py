@@ -1,6 +1,17 @@
 # meditation/memory_scanner.py
 
 
+"""
+Memory Scanner
+
+Analyzes the agent's memory buffer to detect repeated failures,
+redundant patterns, or internal inconsistencies.
+
+Inconsistencies can be defined based on repeated behaviour,
+contradictory states, or memory loops.
+"""
+
+
 import logging
 
 

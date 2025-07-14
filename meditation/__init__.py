@@ -8,3 +8,4 @@ logging.basicConfig(
         logging.FileHandler("logs/meditation.log"),
         logging.StreamHandler()
     ]
+)
