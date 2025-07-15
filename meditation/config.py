@@ -20,3 +20,10 @@ LOG_LEVEL = "DEBUG" # Options: DEBUG, INFO, WARNING, ERROR
 
 # Step 4: Placeholder for future dynamic tuning
 ALLOW_SELF_TUNING = False
+
+# Step 5: Define basic hardcoded goal conflict (domain-specific)
+CONFLICT_PAIRS = [
+    ("reach_exit", "stay_hidden"),
+    ("attack_enemy", "remain_peaceful"),
+    ("gather_loot", "escape_now"),
+]

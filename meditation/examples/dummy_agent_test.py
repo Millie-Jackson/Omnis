@@ -22,10 +22,14 @@ def create_dummy_agent_state():
             {"step": 5, "action": "go", "result": "fail"},
             {"step": 6, "action": "go", "result": "fail"},
         ],
-        "goals": [
-            {"id": "reach_exit", "priority": 1},
-            {"id": "collect_items", "priority": 2},
-            {"id": "reach_exit", "priority": 3},
-        ],
+         "goals": {
+            "original": ["reach_exit", "collect_key"],
+            "current": ["reach_exit", "reach_exit", "open_door"],
+            "priorities": {
+                "reach_exit": 5,
+                "open_door": 5,
+                "collect_key": 2
+        },
         "last_reflection": None,
+    }
     }

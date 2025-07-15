@@ -1,0 +1,19 @@
+{
+    "memory": {
+        "total_entries": 6,
+        "repeated_failures": 5,
+        "most_common_action": "go",
+        "action_count": 5,
+        "failure_loop_detected": true
+    },
+    "goals": {
+        "total_goals": 3,
+        "duplicates": {
+            "reach_exit": 2
+        },
+        "conflicts": [],
+        "priority_conflicts": [],
+        "drift_score": 0.33
+    },
+    "summary": "Omnis is experiencing repeated failure in action 'go'. Detected 1 duplicate goal(s). No logical contradiction between goals. Goal system appears mostry alighned."
+}

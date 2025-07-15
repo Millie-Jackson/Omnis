@@ -72,7 +72,7 @@ def generate_summary(memory_findings, goal_findings):
         conflicts = goal_findings["conflicts"]
         parts.append(f"Found conflicting goals: {', '.join(f'{a} vs {b}' for a, b in conflicts)}.")
     else:
-        parts.append("No logican contradiction between goals.")
+        parts.append("No logical contradiction between goals.")
 
     # Step 3: Final tone
     if goal_findings["drift_score"] >= 0.8:

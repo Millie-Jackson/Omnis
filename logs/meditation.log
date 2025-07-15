@@ -16,3 +16,7 @@
 2025-07-15 00:56:22,654 [INFO] meditation.meditation_module: [Meditation] Triggered. Pausing environment interaction...
 2025-07-15 00:56:22,655 [INFO] meditation.meditation_module: [Meditation] Complete.
 2025-07-15 00:56:22,655 [INFO] __main__: Meditation report saved to logs/meditation_reports/report_2025-07-15T00-56-22.json
+2025-07-15 09:37:46,837 [INFO] __main__: Starting meditation test with dummy agent.
+2025-07-15 09:37:46,894 [INFO] meditation.meditation_module: [Meditation] Triggered. Pausing environment interaction...
+2025-07-15 09:37:46,927 [INFO] meditation.meditation_module: [Meditation] Complete.
+2025-07-15 09:37:46,929 [INFO] __main__: Meditation report saved to logs/meditation_reports/report_2025-07-15T09-37-46.json
