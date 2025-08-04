@@ -3,7 +3,7 @@ env/games/checkers_dummy.py
 """
 
 
-from env.wrapper import BaseGameEnv
+from env.base import BaseGameEnv
 
 
 class DummyCheckers(BaseGameEnv):
