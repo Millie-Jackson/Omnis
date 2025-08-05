@@ -66,3 +66,4 @@ class AgentController:
         logger.info(f"Full episode memory ({len(self.memory.get_episode())} steps):")
         for step in self.memory.get_episode():
             logger.info(step)  
+        self.memory.save_to_file()

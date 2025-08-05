@@ -1,0 +1,42 @@
+[
+  {
+    "state": "state_1",
+    "action": "move_a1_b2",
+    "reward": 0,
+    "info": {
+      "turns": 1
+    }
+  },
+  {
+    "state": "state_2",
+    "action": "move_a1_b2",
+    "reward": 0,
+    "info": {
+      "turns": 2
+    }
+  },
+  {
+    "state": "state_3",
+    "action": "move_a1_b2",
+    "reward": 0,
+    "info": {
+      "turns": 3
+    }
+  },
+  {
+    "state": "state_4",
+    "action": "move_a1_b2",
+    "reward": 0,
+    "info": {
+      "turns": 4
+    }
+  },
+  {
+    "state": "state_5",
+    "action": "move_a1_b2",
+    "reward": 0,
+    "info": {
+      "turns": 5
+    }
+  }
+]
