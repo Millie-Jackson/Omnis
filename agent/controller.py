@@ -6,6 +6,7 @@ agent/controller.py
 from env.wrapper import make_env
 from agent.perception import Perception
 from agent.planning import Planner
+from agent.goal_checker import is_goal_achieved
 import random
 import logging
 
@@ -22,6 +23,7 @@ class AgentController:
         self.done = False
         self.perception = Perception()
         self.planner = Planner()
+        self.goal = "reach_turn_5"
 
     def select_action(self, legal_actions):
         """Stub action selection — random for now."""
@@ -37,7 +39,14 @@ class AgentController:
 
         while not self.done:
             legal = self.env.legal_actions()
+
+            # Always parse state after last env.step()
             parsed_state = self.perception.parse(self.state)
+
+            if is_goal_achieved(parsed_state, self.goal):
+                logger.info(f"Goal '{self.goal}' achieved! Ending episode.")
+                break
+
             action = self.planner.choose_action(parsed_state, legal)
             logger.info(f"Agent action: {action}")
 

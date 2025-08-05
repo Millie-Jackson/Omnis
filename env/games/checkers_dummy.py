@@ -21,6 +21,7 @@ class DummyCheckers(BaseGameEnv):
     def step(self, action):
 
         self.turns += 1
+        self.state = f"state_{self.turns}"
         reward = 0
         done = self.turns > 5
         if done:
