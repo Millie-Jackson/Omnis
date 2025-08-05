@@ -5,6 +5,7 @@ agent/controller.py
 
 from env.wrapper import make_env
 from agent.perception import Perception
+from agent.planning import Planner
 import random
 import logging
 
@@ -20,6 +21,7 @@ class AgentController:
         self.state = None
         self.done = False
         self.perception = Perception()
+        self.planner = Planner()
 
     def select_action(self, legal_actions):
         """Stub action selection — random for now."""
@@ -35,11 +37,12 @@ class AgentController:
 
         while not self.done:
             legal = self.env.legal_actions()
-            action = self.select_action(legal)
+            parsed_state = self.perception.parse(self.state)
+            action = self.planner.choose_action(parsed_state, legal)
             logger.info(f"Agent action: {action}")
 
             self.state, reward, self.done, info = self.env.step(action)
-            #logger.info(f"New state: {self.state} | Reward: {reward} | Done: {self.done} | Info: {info}")
+            logger.info(f"New state: {self.state} | Reward: {reward} | Done: {self.done} | Info: {info}")
 
             parsed_state = self.perception.parse(self.state)
             logger.info(f"Perceived state: {parsed_state}")
