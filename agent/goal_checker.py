@@ -21,7 +21,10 @@ def is_goal_achieved(state, goal: str) -> bool:
     if goal.startswith("reach_turn_"):
         try:
             target_turn = int(goal.split("_")[-1])
-            current_turn = state.get("turn", 0)
+            current_turn = state.get("turn", None)
+            if current_turn is None:
+                logger.warning("State is missing 'turn' key or value is None - cannot evaluate goal.")
+                return False
             return current_turn >= target_turn
         except Exception as e:
             logger.warning(f"Goal parse failed: {e}")
